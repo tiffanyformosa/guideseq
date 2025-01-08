@@ -296,7 +296,7 @@ def analyze(sam_filename, reference_genome, outfile, annotations, windowsize, ma
 		os.makedirs(output_folder)
 
 	logger.info("Processing SAM file %s", sam_filename)
-	file = open(sam_filename, 'rU')
+	file = open(sam_filename, 'r')
 	__, filename_tail = os.path.split(sam_filename)
 	chromosome_position = chromosomePosition(reference_genome)
 	for line in file:

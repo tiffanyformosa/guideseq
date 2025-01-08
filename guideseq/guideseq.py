@@ -42,7 +42,7 @@ class GuideSeq:
         logger.info('Loading manifest...')
 
         with open(manifest_path, 'r') as f:
-            manifest_data = yaml.load(f)
+            manifest_data = yaml.load(f, yaml.SafeLoader)
 
         try:
             # Validate manifest data
@@ -94,7 +94,7 @@ class GuideSeq:
         logger.info('Loading manifest for demultiplexing...')
 
         with open(manifest_path, 'r') as f:
-            manifest_data = yaml.load(f)
+            manifest_data = yaml.load(f, yaml.SafeLoader)
 
             try:
                 self.output_folder = manifest_data['output_folder']
@@ -227,7 +227,7 @@ class GuideSeq:
                 annotations['Description'] = sample_data['description']
                 annotations['Targetsite'] = sample
 
-                if sample is 'control':
+                if sample == 'control':
                     annotations['Sequence'] = ''
                 else:
                     annotations['Sequence'] = sample_data['target']

@@ -1,11 +1,12 @@
 
 [![Version][version-shield]][version-url]
-[![Python versions][python-shield]][python-url]
+<!--- [![Python versions][python-shield]][python-url] --->
 [![Platforms][platform-shield]][python-url]
 
 # guideseq: The GUIDE-Seq Analysis Package
 
 The guideseq package implements our data preprocessing and analysis pipeline for GUIDE-Seq data. It takes raw sequencing reads (FASTQ) and a parameter manifest file (.yaml) as input and produces a table of annotated off-target sites as output.
+Updated 2025-01-07 for compatibility with Python 3.12
 
 ## Table of Contents
 - [Features](#features)
@@ -80,7 +81,7 @@ Alternatively, you can git clone this repository and install
 
 ```
 
-git clone https://github.com/tsailabSJ/guideseq
+git clone https://github.com/tiffanyformosa/guideseq
 
 cd guideseq
 
@@ -105,7 +106,7 @@ For both bwa and bedtools, make sure you know the path to the respective executa
 
 ```
 
-git clone https://github.com/tsailabSJ/guideseq
+git clone https://github.com/tiffanyformosa/guideseq
 
 cd guideseq/test
 
@@ -437,9 +438,7 @@ The MiSeq Reporter service needs to be restarted for the change to take effect. 
 
 See page 29 of the Miseq Reporter User Guide for further instructions.
 
-[version-shield]: https://img.shields.io/conda/v/tsailabsj/guide_seq.svg
-[version-url]: https://anaconda.org/tsailabSJ/guide_seq
-[python-shield]: https://img.shields.io/pypi/pyversions/guide_seq.svg
-[python-url]: https://pypi.python.org/pypi/guide_seq
+[version-shield]: https://img.shields.io/badge/version-1.0.3-blue
+[version-url]: https://github.com/tiffanyformosa/guideseq
 [platform-shield]: https://img.shields.io/badge/Platforms-linux--64,osx--64,linux--32-orange.svg?style=flat-square
 
