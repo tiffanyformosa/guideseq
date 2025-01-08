@@ -1,7 +1,7 @@
 
 [![Version][version-shield]][version-url]
 <!--- [![Python versions][python-shield]][python-url] --->
-[![Platforms][platform-shield]][python-url]
+[![Platforms][platform-shield]]
 
 # guideseq: The GUIDE-Seq Analysis Package
 
